@@ -1,0 +1,338 @@
+.color-bg {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: block;
+}
+.animation-title-wrap {
+  float: left;
+  overflow: hidden;
+  border-bottom: 1.5vw solid red;
+  width: auto;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.animation-title {
+  width: auto;
+  float: left;
+  font-size: 12vw;
+  color: black;
+  text-shadow: none;
+  white-space: nowrap;
+}
+.carousel {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.carousel-caption {
+  position: relative;
+  max-width: 100%;
+  float: left;
+  left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  right: 0;
+}
+.carousel.fade {
+  opacity: 1;
+}
+.carousel.fade .item {
+  transition: opacity ease-out 0.7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin-top: 37vh;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+.carousel.fade .item.active {
+  opacity: 1;
+}
+.placeholder {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  float: left;
+}
+.green {
+  background: #8be5c1;
+}
+.blue {
+  background: #c6dff3;
+}
+body {
+  font-size: 18px;
+}
+p {
+  font-size: 1.1em;
+}
+.red {
+  background-color: #f13d67;
+}
+.grey {
+  background: #ede5e5;
+}
+.black {
+  background: black;
+}
+.slider {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20vh;
+  background-image: url('assets/images/nilpferd.png');
+}
+nav {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: auto;
+  display: block;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  float: left;
+  z-index: 90;
+}
+.nav-btn {
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+  padding: 0.2em 0.7em;
+  margin: 0 0.3em;
+  float: right;
+  position: relative;
+}
+.nav-close-btn {
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+  padding: 0.2em 0.7em;
+  margin: 0 0.3em;
+  float: right;
+  position: relative;
+}
+.navbar-btn-wrap {
+  overflow: hidden;
+  min-width: 310px;
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.nav-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.96);
+  display: none;
+  z-index: 100;
+}
+.navigation {
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: auto;
+  transform: translateY(-50%);
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 100;
+}
+.navigation li {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.navigation li a {
+  font-size: 4.6em;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 850px;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 5px solid #f13d67;
+}
+.navigation li:last-child a {
+  border-bottom: 0;
+}
+.nav-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  max-width: 700px;
+  max-height: 600px;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nilpferd {
+  background-image: url('assets/images/nilpferd_red.png');
+}
+.fisch {
+  background-image: url('assets/images/fisch_red.png');
+}
+.waal {
+  background-image: url('assets/images/waal_red.png');
+}
+.qualle {
+  background-image: url('assets/images/qualle_red.png');
+}
+.fixed {
+  position: fixed;
+}
+.container-padding {
+  padding-top: 1.2em;
+  min-height: 80vh;
+  padding-bottom: 2.5em;
+}
+main section:first-child .container-padding {
+  padding-top: 4em;
+}
+.logo {
+  font-size: 1.9em;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  float: left;
+  padding: 0.1em 0.3em;
+}
+.icon-bar {
+  width: 2.3em;
+  background: black;
+  height: 5px;
+  display: block;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+.title {
+  font-size: 3em;
+  font-size: 15vw;
+}
+footer {
+  color: white;
+}
+.show {
+  display: block !important;
+}
+.square {
+  position: absolute;
+  background: #f13d67;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  z-index: 10;
+  transform-origin: center top 0;
+}
+.relative {
+  position: relative;
+}
+.perspective {
+  perspective: 600px;
+}
+.cone {
+  width: 0;
+  height: 0;
+  border-left: 210px solid transparent;
+  border-right: 210px solid transparent;
+  border-top: 300px solid #9de7bb;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+.section-padding {
+  padding-top: 8em;
+  padding-bottom: 10em;
+}
+.panel-wrap {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.panel-height {
+  width: 100%;
+  display: block;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  perspective-origin: 50% 50%;
+}
+.panel-top {
+  width: 100%;
+  display: block;
+  height: auto;
+  background: #9de7bb;
+  padding-top: 4em;
+  padding-bottom: 5em;
+  transform-origin: center top 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.panel-bottom {
+  width: 100%;
+  display: block;
+  height: auto;
+  background: #f13d67;
+  padding-top: 4em;
+  padding-bottom: 5em;
+  transform-origin: center bottom 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.carousel-background {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20vh;
+  background-image: url('assets/images/nilpferd.png');
+  z-index: -1;
+  background-color: #c6dff3;
+}
